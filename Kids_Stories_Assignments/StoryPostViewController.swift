@@ -9,7 +9,7 @@ import UIKit
 
 class StoryPostViewController: UIViewController {
 
-    @IBOutlet weak var storyImage: UIImageView!
+    @IBOutlet weak var STORYIMage: UIImageView!
     
     @IBOutlet weak var storyTitlelabel: UILabel!
     
@@ -24,7 +24,7 @@ class StoryPostViewController: UIViewController {
         self.storyText.text = storiesInCategoryArr[post_id].post_desc
        // storiesInCategoryArr[post_id].story_image
         storyTitlelabel.text = post_name
-        self.storyImage.downloadImage(from: URL(string: storiesInCategoryArr[post_id].story_image)!)
+        self.STORYIMage.downloadImage(from: URL(string: storiesInCategoryArr[post_id].story_image)!)
         
     }
     
